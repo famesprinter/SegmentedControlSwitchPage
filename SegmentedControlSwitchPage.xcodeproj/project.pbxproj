@@ -54,14 +54,22 @@
 		F011D8D11E54BFAF00142186 /* SegmentedControlSwitchPage */ = {
 			isa = PBXGroup;
 			children = (
-				F011D8D21E54BFAF00142186 /* AppDelegate.swift */,
-				F011D8D41E54BFAF00142186 /* ViewController.swift */,
-				F011D8D61E54BFAF00142186 /* Main.storyboard */,
 				F011D8D91E54BFAF00142186 /* Assets.xcassets */,
+				F011D8D61E54BFAF00142186 /* Main.storyboard */,
+				F011D8D41E54BFAF00142186 /* ViewController.swift */,
+				F011D8E41E54C03700142186 /* Supporting Files */,
+			);
+			path = SegmentedControlSwitchPage;
+			sourceTree = "<group>";
+		};
+		F011D8E41E54C03700142186 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F011D8D21E54BFAF00142186 /* AppDelegate.swift */,
 				F011D8DB1E54BFAF00142186 /* LaunchScreen.storyboard */,
 				F011D8DE1E54BFAF00142186 /* Info.plist */,
 			);
-			path = SegmentedControlSwitchPage;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +308,7 @@
 				F011D8E31E54BFAF00142186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

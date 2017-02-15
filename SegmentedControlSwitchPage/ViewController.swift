@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     // MARK: - IBOutlet
     @IBOutlet weak var segmented: UISegmentedControl!
+    @IBOutlet weak var firstView: UIView!
+    @IBOutlet weak var secondView: UIView!
     
     
     // MARK: - Life Cycle

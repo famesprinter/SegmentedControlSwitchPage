@@ -31,20 +31,71 @@
                                     <action selector="segmentedDidTapWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="dzl-2N-SCW"/>
                                 </connections>
                             </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wri-vg-cfS">
+                                <rect key="frame" x="0.0" y="85" width="375" height="582"/>
+                                <connections>
+                                    <segue destination="rUr-B1-pRp" kind="embed" id="b7l-6F-Gz2"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjp-0A-7Qt">
+                                <rect key="frame" x="0.0" y="85" width="375" height="582"/>
+                                <connections>
+                                    <segue destination="V9O-E5-jxd" kind="embed" id="lL0-z5-Ql8"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Wri-vg-cfS" firstAttribute="top" secondItem="pe3-N3-dAb" secondAttribute="bottom" constant="25" id="2YP-Sc-fqi"/>
                             <constraint firstItem="pe3-N3-dAb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3t8-yS-7Pz"/>
+                            <constraint firstAttribute="trailing" secondItem="Wri-vg-cfS" secondAttribute="trailing" id="Ck4-Lt-dYo"/>
                             <constraint firstItem="pe3-N3-dAb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="EYb-lt-BzQ"/>
+                            <constraint firstItem="Wri-vg-cfS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NAC-nT-C8x"/>
+                            <constraint firstItem="cjp-0A-7Qt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bPX-vn-hD8"/>
+                            <constraint firstItem="cjp-0A-7Qt" firstAttribute="top" secondItem="pe3-N3-dAb" secondAttribute="bottom" constant="25" id="hx2-V2-pVk"/>
                             <constraint firstItem="pe3-N3-dAb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="ptq-F9-0d5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cjp-0A-7Qt" secondAttribute="bottom" id="t69-yx-pYM"/>
+                            <constraint firstAttribute="trailing" secondItem="cjp-0A-7Qt" secondAttribute="trailing" id="vsw-QH-YE8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Wri-vg-cfS" secondAttribute="bottom" id="xDA-66-Dg8"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="firstView" destination="Wri-vg-cfS" id="R7l-IZ-Ke8"/>
+                        <outlet property="secondView" destination="cjp-0A-7Qt" id="QSb-gX-56S"/>
                         <outlet property="segmented" destination="pe3-N3-dAb" id="vLA-Dz-rzl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gaB-hK-cKU">
+            <objects>
+                <viewController id="rUr-B1-pRp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZMz-XG-YiB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="582"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y9i-Xs-pRD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1169" y="-214"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="T24-8Y-Pw6">
+            <objects>
+                <viewController id="V9O-E5-jxd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YE1-TY-LN9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="582"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ibf-dC-Dao" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1169" y="489"/>
         </scene>
     </scenes>
 </document>

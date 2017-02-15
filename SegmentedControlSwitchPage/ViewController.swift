@@ -19,5 +19,10 @@ class ViewController: UIViewController {
         
     }
     
+    // MARK: IBAction
+    @IBAction func segmentedDidTap(sender: UISegmentedControl) {
+        print(sender.selectedSegmentIndex)
+    }
+    
 }
 

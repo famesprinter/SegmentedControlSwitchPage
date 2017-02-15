@@ -22,20 +22,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pe3-N3-dAb">
-                                <rect key="frame" x="56.5" y="28" width="262.5" height="29"/>
+                                <rect key="frame" x="56.5" y="32" width="262.5" height="29"/>
                                 <segments>
                                     <segment title="First View"/>
                                     <segment title="Second View"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentedDidTapWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="dzl-2N-SCW"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pe3-N3-dAb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3t8-yS-7Pz"/>
-                            <constraint firstItem="pe3-N3-dAb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="EYb-lt-BzQ"/>
+                            <constraint firstItem="pe3-N3-dAb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="EYb-lt-BzQ"/>
                             <constraint firstItem="pe3-N3-dAb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="ptq-F9-0d5"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="segmented" destination="pe3-N3-dAb" id="vLA-Dz-rzl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

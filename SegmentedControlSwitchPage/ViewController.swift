@@ -19,11 +19,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        secondView.isHidden = true
     }
     
     // MARK: IBAction
     @IBAction func segmentedDidTap(sender: UISegmentedControl) {
-        print(sender.selectedSegmentIndex)
+        switch sender.selectedSegmentIndex {
+        case 0:
+            firstView.isHidden = false
+            secondView.isHidden = true
+        case 1:
+            firstView.isHidden = true
+            secondView.isHidden = false
+        default:
+            break
+        }
     }
     
 }
